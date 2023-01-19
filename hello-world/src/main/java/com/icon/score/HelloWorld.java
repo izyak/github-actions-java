@@ -12,7 +12,7 @@ public class HelloWorld {
     }
 
     @External(readonly=true)
-    public String name() {
+    public Stringg name() {
         return name;
     }
 
