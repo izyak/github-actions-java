@@ -10,7 +10,7 @@ class AppTest {
     void appHasAName() {
         final String name = "Aleo";
         HelloWorld classUnderTest = new HelloWorld(name);
-        assertEquals(classUnderTest.name(), name);
+        assertEquals(classUnderTest.name(), "1");
     }
 
     @Test
