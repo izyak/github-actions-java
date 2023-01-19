@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 class AppTest {
     @Test
     void appHasAName() {
-        final String name = "Alice";
+        final String name = "Aleo";
         HelloWorld classUnderTest = new HelloWorld(name);
         assertEquals(classUnderTest.name(), name);
     }
