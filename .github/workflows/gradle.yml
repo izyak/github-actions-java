@@ -34,5 +34,7 @@ jobs:
         KEYSTORE: ${{ secrets.KEY_PASSWORD }}  
       run: |
         ./gradlew clean build
+        ./gradlew optimizedJar
+        ls hello-world/build/libs
         ./gradlew :hello-world:deployToLisbon -PkeystoreName='JavaTest.json' -PkeystorePass=$KEYSTORE
 
