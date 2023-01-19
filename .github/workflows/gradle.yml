@@ -30,4 +30,9 @@ jobs:
         distribution: 'temurin'
     - name: Build Hello World Contract
       working-directory: .
-      run: ./gradlew clean build
+      env: 
+        KEYSTORE: ${{ secrets.KEY_PASSWORD }}  
+      run: |
+        ./gradlew clean build
+        ./gradlew :hello-world:deployToLisbon -PkeystoreName='JavaTest.json' -PkeystorePass=$KEYSTORE
+
