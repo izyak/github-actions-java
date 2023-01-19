@@ -30,4 +30,4 @@ jobs:
         distribution: 'temurin'
     - name: Build Hello World Contract
       working-directory: .
-      run: ./gradlew build
+      run: ./gradlew clean build
